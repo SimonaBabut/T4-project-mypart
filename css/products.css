@@ -91,12 +91,14 @@ ul {
   gap: 24px;
 }
 .card-item {
-  display: inline-block;
-}
-.card-2 {
   display: flex;
 }
-
+.card-2 {
+ 
+}
+.card-1 {
+ 
+}
 .bs-list {
   display: flex;
   justify-content: center;
@@ -107,8 +109,8 @@ ul {
 
 .bs-item {
   background-color: #ffffff;
-  display: inline-block;
-  text-align: center;
+  
+ 
 }
 
 .subtitle {
@@ -124,3 +126,33 @@ ul {
   line-height: 27px;
   color: #0a224a;
 }
+
+/******desktop******/
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+  .bs-item:last-child {
+    margin-bottom: auto;
+  }
+  .bestsellers,
+  .products {
+    padding: 100px 0;
+  }
+  .products-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+ .card-item {
+  width: calc((100% - 72px) / 2);
+ }
+
+
+   .bs-item {
+    width: calc((100% - 48px) / 2);
+   }
+
+
+
+  }
