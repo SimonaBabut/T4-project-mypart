@@ -28,77 +28,65 @@ ul {
 
 /* products */
 .container {
-  max-width: 320px;
+  max-width: 343px;
   padding: 0 16px;
   margin: 0 auto;
 }
 .products {
-  background-color: #f4f4fd;
+  background-color: #ffffff;
   padding-top: 100px;
-  padding-bottom: 100px;
-  margin-left: 60px;
-  margin-right: 60px;
+}
+
+.products-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.products-item {
+  background-color: #ffffff;
+  display: inline-block;
+}
+.products-item:last-child {
+  margin-bottom: 0;
 }
 
 .products-header {
   font-size: 32px;
   font-weight: 400;
   line-height: 45px;
-  margin-bottom: 30px;
-  color: #0a224a;
-  text-transform: capitalize;
   text-align: center;
+  color: #0a224a;
+  margin-bottom: 33px;
 }
-.products-list {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-}
+
 .products-desc {
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
-  margin-top: 15px;
+  margin-top: 16px;
   color: #0a224a;
-}
-.products-item {
-  background-color: #ffffff;
-  display: inline-block;
 }
 
 /* bestsellers */
 .bestsellers {
+  background-color: #ffffff;
+  padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #f4f4fd;
-  margin-left: 60px;
-  margin-right: 60px;
-  display: flex;
-}
-.bestsellers-header {
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 45px;
-  color: #0a224a;
-  margin-bottom: 30px;
-  text-transform: capitalize;
-  text-align: center;
 }
 
 .bestsellers-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  gap: 30px;
 }
-.card-item {
-  display: flex;
+
+.bestsellers-photo {
+  max-width: 100%;
 }
-.card-2 {
- 
-}
-.card-1 {
- 
-}
+
 .bs-list {
   display: flex;
   justify-content: center;
@@ -109,10 +97,16 @@ ul {
 
 .bs-item {
   background-color: #ffffff;
-  
- 
 }
-
+.bestsellers-header {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 45px;
+  color: #0a224a;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  text-align: center;
+}
 .subtitle {
   font-size: 18px;
   font-weight: 400;
@@ -126,6 +120,13 @@ ul {
   line-height: 27px;
   color: #0a224a;
 }
+/******** tablet********/
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 16px;
+  }
+}
 
 /******desktop******/
 @media screen and (min-width: 1158px) {
@@ -133,26 +134,4 @@ ul {
     max-width: 1158px;
     padding: 0 15px;
   }
-  .bs-item:last-child {
-    margin-bottom: auto;
-  }
-  .bestsellers,
-  .products {
-    padding: 100px 0;
-  }
-  .products-list {
-    flex-wrap: nowrap;
-    gap: 24px;
-  }
- .card-item {
-  width: calc((100% - 72px) / 2);
- }
-
-
-   .bs-item {
-    width: calc((100% - 48px) / 2);
-   }
-
-
-
-  }
+}
