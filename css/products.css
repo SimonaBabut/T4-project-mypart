@@ -133,7 +133,7 @@ ul {
   color: #0a224a;
 }
 /******** mob********/
-@media screen and (min-width: 375px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .card-1-tab {
     position: absolute;
     width: 1px;
@@ -160,7 +160,7 @@ ul {
   }
 }
 /******** tablet********/
-@media screen and (min-width: 768px) and (max-width: 1158px) {
+@media screen and (min-width: 768px) and (max-width: 1440px) {
   .container {
     max-width: 768px;
     padding: 0 16px;
@@ -202,7 +202,7 @@ ul {
 }
 
 /******desktop******/
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1440px) {
   .container {
     max-width: 1158px;
     padding: 0 15px;
