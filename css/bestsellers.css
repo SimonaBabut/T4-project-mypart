@@ -62,9 +62,6 @@
     max-width: 768px;
     padding: 0 32px;
   }
-
-  .card-1-mob,
-  .card-1-desktop,
   .bestsellers-mob,
   .bestsellers-desk {
     position: absolute;
@@ -96,11 +93,12 @@
     width: calc((100% - 32px) / 2);
   }
 }
+
 /******desktop******/
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
-    padding: 0 72px;
+    padding: 0 172px;
   }
   .bestsellers-mob,
   .bestsellers-tab {
@@ -114,5 +112,17 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+  }
+
+  .desk-list {
+    display: flex;
+    gap: 24px;
+    
+  }
+  .bs-desk-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 30px;
   }
 }
